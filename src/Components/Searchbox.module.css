@@ -1,0 +1,52 @@
+.search input[type="text"] {
+  padding: 6px;
+  border: 1px solid;
+  border-radius: 25px;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.search .searchresult {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+  padding-top: 0px;
+  z-index: 1;
+}
+
+.search .searchresult.visible {
+  display: block;
+}
+
+.search .searchresult ul {
+  padding-left: 0px;
+  margin-top: 2px;
+}
+.search .searchresult ul li {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-bottom: 2px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid black;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search .searchresult ul li:focus {
+  background-color: yellow;
+}
+.search .searchresult ul li:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.search .searchresult ul li span.symbol {
+  font-weight: bolder;
+}
+
+.search .searchresult ul li span.companyname {
+  font-weight: 100;
+  font-size: small;
+}
