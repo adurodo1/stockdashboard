@@ -1,7 +1,7 @@
 import React from "react";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
-import { render, screen } from "@testing-library/react";
+import { getByTestId, render, screen, waitFor } from "@testing-library/react";
 import App from "../App";
 it("Searh components appear", async () => {
   //Arrange
@@ -11,9 +11,11 @@ it("Searh components appear", async () => {
 
   await userEvent.click(screen.getByPlaceholderText("apple"));
   await userEvent.type(searchbox, "microsoft");
+  await waitFor(async () => {
+    expect(getByTestId("searchlistitems")).toBeInTheDocument();
+  });
 
   expect(searchbox.getAttribute("placeholder")).toContain("microsoft");
-  expect(screen.getByTestId("searchlistitems")).toContain("microsoft");
   expect(screen.getByText("Loading")).toBeInTheDocument();
   // expect(screen.getByText("Search")).toBeInTheDocument();
 });

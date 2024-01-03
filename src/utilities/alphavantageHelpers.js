@@ -8,7 +8,6 @@ export async function searchCompany(company) {
   );
 
   let json = await results.json();
-  //console.log(json);
   return json;
 }
 
