@@ -9,7 +9,7 @@ const SearchBoxListItem = forwardRef(({ listitem, symbolapi }, ref) => {
   }
 
   return (
-    <ul>
+    <ul data-testid="searchlistitems">
       {listitem.map((e, key) => (
         <li onClick={(e) => selectCompanySymbol(e)} key={key} title={e.symbol}>
           <span className={styles.symbol} title={e.symbol}>

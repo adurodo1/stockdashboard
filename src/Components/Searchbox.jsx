@@ -34,7 +34,7 @@ const Searchbox = memo(({ symbolapi }) => {
       return;
     }
     let result = await searchCompany(companyName);
-    result.bestMatches.forEach((element) => {
+    result.bestMatches.map((element) => {
       setListitem((prev) => [
         ...prev,
         { symbol: element["1. symbol"], name: element["2. name"] },

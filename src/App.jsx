@@ -102,7 +102,7 @@ function App() {
               {companyNews ? <News newsdata={companyNews} /> : ""}
             </div>
           </div>
-          <div class="right">
+          <div className="right">
             <div className="line_graph">
               {graphData ? (
                 <LineChart generalData={graphData} company={companySymbol} />
