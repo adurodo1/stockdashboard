@@ -1,0 +1,103 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 800px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+}
+.container .upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 400px;
+}
+.container .upper .left {
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  min-height: 400px;
+}
+.container .upper .left .dashboard_input {
+  width: 100%;
+  min-height: 300px;
+}
+
+.container .upper .left .news {
+  width: 100%;
+}
+.container .upper .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  min-height: 400px;
+}
+
+.container .upper .right .line_graph {
+  width: 100%;
+  height: 50%;
+}
+
+.container .upper .right .barchart {
+  width: 100%;
+  height: 50%;
+}
+
+.container .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 400px;
+}
+
+.maps {
+  background-color: green;
+  width: 98%;
+}
+.dashboard_input {
+  display: flex;
+  border: 1px solid black;
+  gap: 3px;
+  justify-content: space-around;
+  width: 20%;
+}
+.dashboard_input > table {
+  display: block;
+}
+.dashboard_input > table > tbody {
+  display: block;
+}
+
+.dashboard_input > table > tbody > tr > {
+  display: block;
+}
+
+.dashboard_input > table > tbody > tr > td {
+  display: block;
+}
+
+.news {
+  width: 20%;
+  min-height: 205px;
+  border: 1px solid black;
+}
+.news .tablelayout {
+  overflow: auto;
+  height: 200px;
+  width: 100%;
+}
+.news .tablelayout table {
+  width: 120%;
+}
