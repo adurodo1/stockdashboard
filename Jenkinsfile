@@ -1,6 +1,6 @@
 pipeline {
-    agent any
-    
+ 
+     agent { label 'MSSRV01' }
     tools {nodejs "node"}
 
     stages {
