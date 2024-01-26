@@ -3,7 +3,7 @@ import { searchCompany } from "../utilities/alphavantageHelpers";
 import styles from "./Searchbox.module.css";
 import SearchBoxListItem from "./SearchBoxListItem";
 
-const Searchbox = memo(({ symbolapi }) => {
+const Searchbox = memo(({ symbolapi, selectCompanySymbol }) => {
   //useState
   //console.log("Searchbox  Rendered");
   const [companyName, setCompanyName] = useState("apple");
@@ -58,6 +58,7 @@ const Searchbox = memo(({ symbolapi }) => {
             listitem={listitem}
             ref={searchResultRef}
             symbolapi={symbolapi}
+            selectCompanySymbol={selectCompanySymbol}
           />
         ) : isSearboxEmpty ? (
           ""

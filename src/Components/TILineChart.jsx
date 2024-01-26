@@ -20,7 +20,7 @@ ChartJS.register(
   Legend
 );
 
-export default function LineChart({ generalData, company }) {
+export default function TILineChart({ generalData, company }) {
   const options = {
     responsive: true,
     plugins: {
@@ -38,33 +38,13 @@ export default function LineChart({ generalData, company }) {
     labels: generalData.labeldata,
     datasets: [
       {
-        label: "Open",
-        data: generalData.open,
+        label: generalData.label,
+        data: generalData.labeldatavalue,
         borderColor: "rgb(255, 99, 132)",
         backgroundColor: "rgba(255, 99, 132, 0.5)",
       },
-      {
-        label: "High",
-        data: generalData.high,
-        borderColor: "rgb(99, 255, 132)",
-        backgroundColor: "rgba(99, 255, 132, 0.5)",
-      },
-      {
-        label: "Low",
-        data: generalData.low,
-        borderColor: "rgb(0, 199, 132)",
-        backgroundColor: "rgba(0, 199, 132, 0.5)",
-      },
-      {
-        label: "Close",
-        data: generalData.close,
-        borderColor: "rgb(132, 99, 255)",
-        backgroundColor: "rgba(132, 99, 255), 0.5)",
-      },
     ],
   };
-
-  console.log(data);
 
   return <Line options={options} data={data} />;
 }

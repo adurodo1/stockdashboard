@@ -11,14 +11,15 @@ const News = memo(({ newsdata }) => {
   return (
     <>
       {news ? (
-        <div>
-          <p>Symbol: {news[1].Symbol}</p>
-          <p>Asset Type: {news[1].AssetType}</p>
-          <p>Name: {news[1].Name}</p>
-          <p>Description: {news[1].Description}</p>
+        <>
+          <div className="content">
+            <p>Symbol: {news[1].Symbol}</p>
+            <p>Asset Type: {news[1].AssetType}</p>
+            <p>Name: {news[1].Name}</p>
+            <p>Description: {news[1].Description}</p>
 
-          <p>Total New Items {news[0].items}</p>
-
+            <p>Total New Items {news[0].items}</p>
+          </div>
           <div className="tablelayout">
             <table>
               <thead>
@@ -59,7 +60,7 @@ const News = memo(({ newsdata }) => {
               </tbody>
             </table>
           </div>
-        </div>
+        </>
       ) : (
         ""
       )}

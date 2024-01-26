@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.ohlc,
+.volume {
+  background-color: #fe8a7d;
+  color: rgb(64, 78, 103);
+  margin-left: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+body {
+  font-family: open sans, sans-serif;
+  background-color: #f3f3f3;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 800px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+.container .upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 400px;
+}
+.container .upper .left {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(64, 78, 103);
+  width: 27%;
+  min-height: auto;
+}
+.container .upper .left input:focus {
+  color: #fe8a7d;
+  border: #fe8a7d;
+}
+.container .upper .left select:focus {
+  color: #fe8a7d;
+  border: #fe8a7d;
+}
+.container .upper .left .dashboard_input {
+  width: 95%;
+  min-height: auto;
+  padding-left: 10px;
+  padding-top: 10px;
+  display: flex;
+  gap: 3px;
+}
+.container .upper .left .dashboard_input details {
+  width: 100%;
+}
+.container .upper .left .dashboard_input details summary {
+  list-style: none;
+  cursor: pointer;
+}
+.container .upper .left .dashboard_input details input {
+  width: 100%;
+}
+.container .upper .left .dashboard_input details select {
+  width: 100%;
+}
+.container .upper .left .dashboard_input .title {
+  color: #dcdcdc !important;
+}
+.container .upper .left .dashboard_input table {
+  display: block;
+  width: 100%;
+}
+.container .upper .left .dashboard_input table tbody {
+  display: block;
+}
+.container .upper .left .dashboard_input table tbody tr,
+.container .upper .left .dashboard_input table tbody td {
+  display: block;
+}
+.container .upper .left .dashboard_input table tbody tr {
+  margin-bottom: 8px;
+}
+.container .upper .left .news {
+  width: 95%;
+  min-height: 100px;
+  padding-left: 10px;
+  padding-top: 10px;
+  overflow: auto;
+}
+.container .upper .left .news P::selection {
+  background-color: #fe8a7d;
+}
+.container .upper .left .news p {
+  color: #919aa3;
+}
+.container .upper .left .news details .content {
+  width: 95%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 7px;
+}
+.container .upper .left .news details summary {
+  list-style: none;
+  cursor: pointer;
+}
+.container .upper .left .news .tablelayout {
+  margin-top: 20px;
+  overflow: auto;
+  height: 200px;
+  width: 100%;
+  background-color: rgb(64, 78, 103);
+}
+.container .upper .left .news .tablelayout table {
+  width: 120%;
+}
+.container .upper details {
+  border-bottom: 1px solid rgb(38, 46, 61);
+}
+.container .upper details summary {
+  font-weight: 600;
+  color: #dcdcdc !important;
+  margin-bottom: 10px;
+}
+.container .upper .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 35%;
+  min-height: 400px;
+}
+.container .upper .right .line_graph {
+  width: 100%;
+  height: 100%;
+}
+.container .upper .right .barchart {
+  width: 100%;
+  height: 50%;
+}
+.container .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 400px;
+}
+
+.line_graph {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+}
+
+.ohlc:hover,
+.volume:hover {
+  color: #fe8a7d;
+  background-color: rgb(64, 78, 103);
+  cursor: pointer;
+}
+
+.maps {
+  background-color: green;
+  width: 98%;
+}
+
+/*# sourceMappingURL=App.css.map */
