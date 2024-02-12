@@ -33,7 +33,7 @@ function App() {
   const [timeseries, setTimeSeries] = useState();
   const [interval, setInterval] = useState();
   const [slider1value, setSlider1value] = useState(0);
-  const [slider2value, setSlider2value] = useState(25);
+  const [slider2value, setSlider2value] = useState(26);
   const [graphData, setGraphData] = useState();
   const [volumeData, setVolumeData] = useState();
 

@@ -55,8 +55,8 @@ export async function searchTimeSeries(company, timeseries, interval = "5min") {
 }
 
 export async function synthesizeMonthlyData(json, slider1value, slider2value) {
-  const slider1Date = new Date(slider1value + 1998, 12, 31, 23, 59, 59, 999); // Set day and month
-  const slider2Date = new Date(slider2value + 1998, 12, 31, 23, 59, 59, 999); // Set day and month
+  const slider1Date = new Date(slider1value + 1999, 12, 31, 23, 59, 59, 999); // Set day and month
+  const slider2Date = new Date(slider2value + 1999, 12, 31, 23, 59, 59, 999); // Set day and month
   let init_arr = [];
   let prem_arr = [];
   let arr = [];
@@ -110,8 +110,8 @@ export async function synthesizeMonthlyData(json, slider1value, slider2value) {
 }
 
 export async function synthesizeGeneralData(json, slider1value, slider2value) {
-  const slider1Date = new Date(slider1value + 1998, 12, 31, 23, 59, 59, 999); // Set day and month
-  const slider2Date = new Date(slider2value + 1998, 12, 31, 23, 59, 59, 999); // Set day and month
+  const slider1Date = new Date(slider1value + 1999, 12, 31, 23, 59, 59, 999); // Set day and month
+  const slider2Date = new Date(slider2value + 1999, 12, 31, 23, 59, 59, 999); // Set day and month
 
   let init_arr = [];
   let prem_arr = [];
